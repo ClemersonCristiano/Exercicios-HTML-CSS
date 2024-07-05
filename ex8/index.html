@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+</head>
+
+<body>
+
+    <p>
+        <h1>Criando Links com a tag &lt;a&gt;</h1> <br><br>
+    
+        <h2>Testando links internos e externos</h2><br>
+    
+        Exemplo de link, carregado na janela atual: 
+        <a href="https://www.youtube.com/watch?v=5_jljiJwYns" target ="_self" rel="external">
+            youtube
+        </a>
+        
+        <br><br>
+        
+        Exemplo de link, carregado em uma nova janela: 
+        <a href="https://www.youtube.com/watch?v=5_jljiJwYns" target ="_blank" rel="external">
+            youtube
+        </a>
+    </p>
+    
+    <p>
+        <h1>Link Externo</h1>
+
+        <h2>Sintaxe para adicionar link externo a um texto:</h2>
+    
+        &lt;a href="link" target ="_blank" rel="external"&gt; descrição ou texto que sera clicado para direcionar ao link  &lt;/a&gt; <br><br>
+        Em target, pode ser adicionado um parametro que determina em qual janela será carregado o link. <br>
+        _self para carregar na janela atual, e _blank para abrir uma nova janela.
+    </p>
+
+
+
+    
+    <p>
+        <h1>Link Interno</h1>
+        Para usar o link interno a sintaxe é a mesma, somento mundando a referencia, que no caso dos links externos <br>
+        são as URL, já nos internos são o nome do arquivo. Outra mudança é o rel, que pode ser prev ou next para indicar <br>
+        se o link é para uma pagina anterior ou uma proxima pagina. <br><br>
+        
+        obs: Se alguma pagina estiver em uma sub-pasta da pasta onde está o index, deve-se passar<br>
+        o caminho completo. <br><br>
+        por exemplo: sub_pasta/pag.html. <br><br>
+
+        Já no arquivo da pagina que está em outra pasta deve-se adicionar no caminho o seguinte "../" <br>
+        antes do index, isso serve para volta para a pasta principal, dependendo da orgaziação <br>
+        das pastas cada "../" volta uma pasta. <br><br>
+
+        ex: &lt;a href="../index.html"&gt; &lt;/a&gt; <br><br>
+
+        <h2>Sintaxe para link que carrega a proxima pagina:</h2>
+        &lt;a href="nome do arquivo da pagina" target ="_self" rel="prev ou next" &gt; descrição ou texto que sera clicado para direcionar ao link &lt;/a&gt;
+    </p>
+
+    <p>
+        <h2>Teste de Link para a Segunda Pagina</h2>
+
+        <a href="pag2.html" target="_self" rel="next">Clique Aqui</a>
+        para ir a segunda pagina
+    </p>
+
+    <p>
+        <h2>Teste de Link para a Terceira Pagina</h2>
+
+        <a href="sub-pagina/pag3.html" target="_self" rel="next">Clique Aqui</a>
+        para ir a terceira pagina
+    </p>
+
+    <br><br>
+
+    <p>
+        <h1>Links para Download</h1>
+
+        Para fazer um link de download, a sintaxe continua a mesma. A mudança ocorre no href onde ao invés de colocar uma url ou caminho para um arquivo html,
+        adiciona-se o caminho para o arquivo que deseja fazer o download.
+
+        <h2>Sintaxe para link de download:</h2>
+
+        <!-- site para buscar a sintaxe do tipo de midia desejado-->
+        <!-- https://www.iana.org/assignments/media-types/media-types.xhtml#image -->
+
+        &lt;a href="caminho do arquivo" download = "caminho do arquivo" type = "tipo do arquivo" &gt; descrição ou texto que sera clicado para direcionar ao download  &lt;/a&gt; <br><br>
+
+        <h2>Teste de Download de um pdf</h2>
+        <a href="download/atividade teto.pdf" download="tividade teto.pdf" type="application/pdf">Clique Aqui</a> para fazer o download do pdf.
+
+        <h2>Teste de Download de uma imagem</h2>
+
+        <a href="download/pc.png" download="pc.png" type="image/png"> Clique Aqui</a> para fazer o download da imagem.
+
+    </p>
+
+</body>
+
+</html>

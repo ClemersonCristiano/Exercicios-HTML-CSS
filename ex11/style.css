@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body
+{   
+    display: block;
+    background-image: linear-gradient(to right, #000,#010865, #082fa4, #0b3cce, #082fa4, #010865,#000);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1
+{
+    background-image: linear-gradient(to right, #082fa4, #010865, #010865, black, black, #010865, #010865, #082fa4);
+    color: white;
+    text-align: center;
+    width: auto;
+}
+
+h1:hover
+{
+    color: red;
+}
+
+p
+{
+    color: white;
+    text-align: justify;
+}
+
+p:hover
+{
+    color: red;
+}
+
+div
+{
+    background-color: whitesmoke;
+    border: 10px solid black;
+    align-content: center;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+div:hover
+{
+    background-image: linear-gradient(to top, #000,#010865, #082fa4, #0b3cce, #082fa4, #010865,#000);
+}
+
+
+#centro
+{
+    color: #000;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#centro:hover
+{
+    color: red;
+}

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+
+    background-color: black;
+    background-image: url(imagens-cap19/wallpaper003.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+
+    
+    /* shorthand - background
+
+        background: black url(imagens-cap19/wallpaper003.jpg) center center no-repeat fixed;
+        background-size: cover;
+
+    */
+}
+
+/* 
+    testando fundo em divs
+.principal
+{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+} */
+
+/* .quad
+{
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+}
+
+#q1
+{
+    background-image: url(imagens-cap19/pattern001.png);
+    background-position: center center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+#q2
+{
+    background-image: url(imagens-cap19/pattern002.png);
+    background-position: center center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+
+#q3
+{
+    background-image: url(imagens-cap19/pattern003.png);
+    background-position: center center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+} */
+

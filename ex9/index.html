@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Midias</title>
+    </head>
+
+    <body>
+
+        <h1>Imagem Dinamica</h1>
+        
+        <h2>Criando imagens dinamicas</h2>
+        
+        <p>
+            Para adaptar imagens para varios tamanhos de tela, pode-se usar a tag &lt;picture&gt; <br>
+            e dentro dela a tag &lt;source&gt;. Cada &lt;source&gt; deve ser criado em ordem crescente <br>
+            da img com menor tamanho até a imagem principal <br><br>
+            
+            <h2>sintaxe: </h2>
+            <pre>
+                <code>
+                    &lt;picture&gt; 
+                    
+                        &lt;source media="(max-width: largura maxima da imagen em px )" srcset="caminho da imagen" type="image/png"&gt;
+                        
+                        &lt;source media="(max-width: largura maxima da imagen em px )" srcset="caminho da imagen" type="image/png"&gt;
+                                
+                        &lt;img src="caminho da imagen" alt="texto"&gt;
+                    
+                    &lt;/picture&gt;
+                </code>
+            </pre>
+
+        </p>
+
+        <h1>Imagem que muda de acordo com a largura ta tela</h1>
+
+        <picture>
+            <source id = "imgP" media="(max-width: 750px)" srcset="img/img1.png" type="image/png">
+
+            <source media="(max-width: 1050px)" srcset="img/img2.png" type="image/png">
+
+            <img src="img/img3.png" alt="img grande">
+        </picture>
+
+        <h1>Audios</h1>
+
+        <p>
+            Para adicionar audio a pagina pode-se usar a tag &lt;audio&gt;
+            tambem pode se usar a tag &lt;source&gt; para parametrizar melhor. <br>
+            
+            <audio controls>
+                <source src="audio/myedit_ai_sfx_0417220235.mp3" type="audio/mpeg">
+            </audio>
+        </p>
+
+        <h1>Video</h1>
+
+        <p>
+            <h2>video hoespedado localmente</h2>
+
+            Para adicionar video utiliza-se a tag &lt;video&gt;, ela funciona basicamente como a tag audio, somente mudando alguns parametros. <br>
+            Ela tambem pode ser usada com a tag &lt;source&gt; dentro dela, com o mesmo funcionamento. <br>
+            
+            <video controls width="720" height="480" poster = https://www.compumaq.com.br/loja/img/produtos/0015344.jpg>
+                <source src="video/Apresentação em Video do Código.mp4"  type="video/mp4">
+            </video>
+        </p>
+
+        <p>
+            <h2>Usando incorporação do Youtube</h2>
+
+            <iframe 
+                width="720" 
+                height="480" 
+                src="https://www.youtube.com/embed/3hng-hmSv2Y?si=sIK6Lqpmv1O3c3_U" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </p>
+
+
+
+    </body>
+
+</html>
